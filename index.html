@@ -1,29 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Dynamic Application</title>
-    <link rel="stylesheet" href="./styles/style.CSS">
-</head>
-<body onload="greet()">
-    <div class="container">
-        <div class="button-group">
-            <button onclick="alert('Hello! This is Tetricia Teopista. Welcome!')">Click me</button>
-            <button id="Click">Internal Javascript</button>
-            <button onClick="toggleText()">Change Text</button>
-        </div>
-
-        <p id="text">This is the first HTML, CSS and Javascript fusion</p>
-        
-        <div class="color-section">
-            <div class="color-picker">
-                <input type="color" id="colorPickerInput" value="#00FFFF" onchange="handleColorPicker()">
-                <input type="text" id="colorInput" placeholder="Enter color name (e.g. red)" onkeyup="handleTextInput(event)">
-                <button onclick="applyColor()" class="apply-button">Apply Color</button>
-            </div>
-            <div id="errorMessage" class="error-message"></div>
-        </div>
-    </div>
-    
-    <script src="fusion.js"> </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/daystar-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daystar Daycare Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
